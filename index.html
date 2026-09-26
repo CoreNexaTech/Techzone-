@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Home - TechZone</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #0b0f19; color: #e2e8f0; line-height: 1.7; }
+        nav { background: #111827; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #2563eb; position: sticky; top: 0; z-index: 100; }
+        .logo-box { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { background: #2563eb; color: white; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px; border-radius: 8px; box-shadow: 0 0 12px rgba(37,99,235,0.7); }
+        .nav-links { display: flex; gap: 18px; font-weight: 500; flex-wrap: wrap; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: #60a5fa; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+        h1 { color: #60a5fa; margin-bottom: 15px; font-size: 30px; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }
+        h2 { color: #38bdf8; margin: 25px 0 12px 0; font-size: 22px; }
+        p { margin-bottom: 15px; color: #cbd5e1; font-size: 16px; }
+        .badge { display: inline-block; background: #2563eb; color: white; padding: 5px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
+        .component-img-container { margin: 25px 0; text-align: center; }
+        .component-img-container img { width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; border: 1px solid #475569; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .spec-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #0f172a; border-radius: 8px; overflow: hidden; }
+        .spec-table th, .spec-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #1e293b; }
+        .spec-table th { background: #1e293b; color: #60a5fa; }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 35px; padding-top: 20px; border-top: 1px solid #334155; }
+        .btn { background: #2563eb; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+        .btn:hover { background: #1d4ed8; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem; margin-top: 4rem; border-top: 1px solid #1e293b; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-box">
+            <div class="logo-icon">TZ</div>
+            <span style="font-size: 22px; font-weight: bold; color: #f3f4f6;">Tech<span style="color: #3b82f6;">Zone</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cpu.html">CPU</a>
+            <a href="gpu.html">GPU</a>
+            <a href="ram.html">RAM</a>
+            <a href="motherboard.html">Motherboard</a>
+            <a href="storage.html">Storage</a>
+            <a href="psu.html">PSU</a>
+            <a href="cooling.html">Cooling</a>
+            <a href="case.html">Case</a>
+            <a href="monitor.html">Monitor</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <span class="badge">Core Computer Hardware</span>
+            <h1>Welcome to TechZone Hardware Portal</h1>
+            <p style="font-size: 17px; color: #f1f5f9; font-weight: 500;">Your ultimate hub for complete, structured computer hardware architecture and component insights.</p>
+            
+            <div class="component-img-container">
+                <img src="index.jpg" alt="Computer Hardware Overview">
+            </div>
+
+            <h2>Hardware Specifications & Overview</h2>
+            <p>In modern computer systems, every hardware component plays a critical role in overall processing speed, thermal efficiency, and stability. Choosing the right components ensures your system operates at peak capability without bottlenecks.</p>
+            
+            <table class="spec-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Specification Detail</th>
+                </tr>
+                <tr>
+                    <td>Primary Function</td>
+                    <td>Core data processing and computational execution for Welcome to TechZone Hardware Portal.</td>
+                </tr>
+                <tr>
+                    <td>Compatibility Check</td>
+                    <td>Requires matched socket/bus interface on the motherboard and adequate power delivery.</td>
+                </tr>
+                <tr>
+                    <td>Thermal Impact</td>
+                    <td>Generates operational heat requiring proper cooling clearance and airflow management.</td>
+                </tr>
+            </table>
+
+            <h2>Key Selection Factors</h2>
+            <p>Before purchasing or upgrading your computer hardware, always verify interface standards, physical dimensions, power supply wattage headroom, and BIOS compatibility.</p>
+
+            <div class="nav-buttons">
+                <a href="index.html" class="btn">&larr; Home</a>
+                <a href="cpu.html" class="btn">Next Component &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TechZone Computer Hardware Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
